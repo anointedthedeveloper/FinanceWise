@@ -13,13 +13,10 @@ export const metadata: Metadata = {
   description: 'Expert financial advice, investment strategies, and money management guides for building wealth and achieving financial freedom.',
   generator: 'v0.app',
   keywords: ['finance', 'investing', 'money management', 'investment strategies', 'wealth building'],
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 5,
-    userScalable: true,
-  },
   authors: [{ name: 'FinanceWise' }],
+  other: {
+    'google-adsense-account': 'ca-pub-1727042318749362',
+  },
   icons: {
     icon: [
       {
@@ -60,7 +57,6 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1727042318749362"
           crossOrigin="anonymous"
         />
-        <meta name="google-adsense-account" content="ca-pub-1727042318749362" />
       </Head>
       <body className={`${geist.variable} ${geistMono.variable} font-sans antialiased`}>
         {children}
