@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
+import Head from 'next/head';
 
 const geist = Geist({ subsets: ["latin"], variable: '--font-sans' });
 const geistMono = Geist_Mono({ subsets: ["latin"], variable: '--font-mono' });
@@ -53,14 +54,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        {/* Google AdSense - Replace with your Publisher ID */}
+      <Head>
         <script
           async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-xxxxxxxxxxxxxxxx"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1727042318749362"
           crossOrigin="anonymous"
         />
-      </head>
+        <meta name="google-adsense-account" content="ca-pub-1727042318749362" />
+      </Head>
       <body className={`${geist.variable} ${geistMono.variable} font-sans antialiased`}>
         {children}
         <Analytics />
